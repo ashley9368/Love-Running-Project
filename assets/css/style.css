@@ -74,6 +74,7 @@ benefits hr {
     height: 90vw;
     width:90vw;
     margin-bottom: 20px;
+    margin: 0 auto 20px auto;
     /* Makes the square image into a circle */
     border-radius: 50%;
     max-width: 300px;
@@ -84,6 +85,7 @@ benefits hr {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 
 #menu {
@@ -207,6 +209,24 @@ main {
         width: 300px;
         right: 50px;
     }
+
+    /* Reasons section */
+    #benefits-physical,
+    #benifits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #benefits-physical > div,
+    #benifits-mental > div {
+        width: 75%;
+    }
+
+    #benefits-mental > div {
+        text-align: end;
+        align-self: flex-end;
+    }
 }
 
 /* Large devices (laptops and desktops, 992px and up */
@@ -214,6 +234,34 @@ main {
     #menu a:hover{
         border-bottom: 1px solid #3a3a3a;
     }
+}
+
+@media screen and (min-width: 1200px) {
+    /* Reasons section */
+    #benefits {
+    display: flex;
+    flex-direction: row;
+    }
+    #benefits > div {
+        flex: 1;
+    }
+
+    #benefits-image {
+        order: 0
+    }
+
+    #benefits-mental {
+        order: 1;
+    }
+
+    #benefits-mental > div {
+        align-self: flex-start;
+    }
+
+    #benefits-physical > div {
+        align-self: flex-end;
+    }
+
 }
 
 
