@@ -73,7 +73,6 @@ benefits hr {
     background: url('../images/reasons-image.webp') no-repeat top center / cover;
     height: 90vw;
     width:90vw;
-    margin-bottom: 20px;
     margin: 0 auto 20px auto;
     /* Makes the square image into a circle */
     border-radius: 50%;
